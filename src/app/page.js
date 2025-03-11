@@ -13,7 +13,7 @@ export default function Home() {
             errorMessage={10}
             type="date"
           />
-          <Button text="red" className="hover:bg-red-200" />
+          <Button text="red" className="text-9xl" />
         </div>
       </section>
     </>

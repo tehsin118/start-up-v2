@@ -24,11 +24,18 @@
   --shadow-primary: 0px -11.295px 25.1px 0px rgba(1, 102, 152, 0.1),
     0px 46.434px 46.434px 0px rgba(1, 102, 152, 0.09),
     0px 11.295px 25.1px 0px rgba(1, 102, 152, 0.1);
+
+  --animate-spin: spin 2s linear infinite;
 }
 
 @layer base {
   body {
     font-family: "Poppins", sans-serif;
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
 
@@ -42,5 +49,22 @@
     background: transparent !important;
   }
 }
-
+@layer components {
+  .typography {
+    p {
+      font-size: var(--text-base);
+      color: var(--color-gray-700);
+    }
+    h1 {
+      font-size: var(--text-2xl--line-height);
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-gray-950);
+    }
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-gray-950);
+    }
+  }
+}
 /* custom styles */

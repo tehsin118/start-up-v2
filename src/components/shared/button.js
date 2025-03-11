@@ -34,7 +34,7 @@ const Button = ({
   console.log(loading);
   return (
     <button
-      className={`w-24 cursor-pointer text-base font-medium rounded-md transition-2  p-2.5 bg-green-500 ${
+      className={`min-w-24 cursor-pointer text-base font-medium rounded-md transition capitalize duration-150 ease-in-out p-2.5 bg-green-500 ${
         loading && "!cursor-not-allowed"
       } ${className}`}
       style={buttonStyle}
@@ -46,13 +46,19 @@ const Button = ({
           <span className="flex justify-center  items-center gap-2">
             {text}
 
-            <Image src={loader} className={`size-5 ${imgClass}`} />
+            <Image
+              src={loader}
+              alt="loading"
+              className={`size-5 animate-spin ${imgClass}`}
+            />
           </span>
         </>
       ) : (
         <>
           <span>{text}</span>
-          {img && <img src={img} alt="Button Image" className={imgClass} />}
+          {img && (
+            <Image src={img} alt="img" className={`size-5 ${imgClass}`} />
+          )}
         </>
       )}
     </button>
