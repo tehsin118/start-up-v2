@@ -1,0 +1,34 @@
+.date-picker {
+  height: 50px;
+  background: rgba(0, 0, 0, 0.02);
+  border: none;
+}
+
+.date-picker {
+  height: 50px;
+  background: rgba(0, 0, 0, 0.02);
+  border: none;
+}
+
+.date-picker .ant-picker-input {
+  justify-content: space-between;
+}
+
+.date-picker:hover {
+  background: rgba(0, 0, 0, 0.02);
+  border: none;
+  outline: 1px solid transparent !important;
+}
+
+.date-picker:focus-within {
+  box-shadow: none;
+  outline: 1px solid #308748 !important;
+}
+
+.date-picker-popup .ant-picker-cell-today .ant-picker-cell-inner::before {
+  border: 1px solid #308748 !important;
+}
+
+.date-picker-popup .ant-picker-cell-selected .ant-picker-cell-inner {
+  background: #308748 !important;
+}
