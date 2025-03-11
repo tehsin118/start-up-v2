@@ -34,7 +34,7 @@ const Button = ({
   console.log(loading);
   return (
     <button
-      className={`w-24 cursor-pointer text-base font-medium rounded-md  p-2.5 bg-green-500 ${
+      className={`w-24 cursor-pointer text-base font-medium rounded-md transition-2  p-2.5 bg-green-500 ${
         loading && "!cursor-not-allowed"
       } ${className}`}
       style={buttonStyle}
